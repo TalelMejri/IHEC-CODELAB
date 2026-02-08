@@ -1,6 +1,6 @@
 import { useTheme } from "next-themes";
 import { Moon, Sun, Languages, ChevronDown } from "lucide-react";
-import { LanguageContext, useTranslation } from '@/i18n';
+import { LanguageContext } from '@/i18n';
 import { useContext, useState, useEffect } from 'react';
 
 interface PageLayoutProps {
@@ -14,7 +14,6 @@ export default function PageLayout({
   showLanguageSelector = true, 
   showThemeToggle = true 
 }: PageLayoutProps) {
-  const { t } = useTranslation();
   const { language: currentLanguage, setLanguage } = useContext(LanguageContext);
   const { theme, setTheme } = useTheme();
   const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);

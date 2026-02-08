@@ -190,7 +190,6 @@ export default function OnboardingFlow({
         } opacity-70`;
 
       const startX = isRightSwipe ? '20%' : '80%';
-      const endX = isRightSwipe ? '80%' : '20%';
 
       particle.style.left = startX;
       particle.style.top = `${50 + (Math.random() - 0.5) * 40}%`;
@@ -242,37 +241,7 @@ export default function OnboardingFlow({
     setCurrentStep(index);
   };
 
-  // Animation variants
-  const slideVariants = {
-    enter: (direction: number) => ({
-      x: direction > 0 ? 300 : -300,
-      opacity: 0,
-      scale: 0.9,
-      rotateY: direction > 0 ? 10 : -10,
-    }),
-    center: {
-      x: 0,
-      opacity: 1,
-      scale: 1,
-      rotateY: 0,
-      transition: {
-        type: "spring",
-        stiffness: 300,
-        damping: 30
-      }
-    },
-    exit: (direction: number) => ({
-      x: direction < 0 ? 300 : -300,
-      opacity: 0,
-      scale: 0.9,
-      rotateY: direction < 0 ? 10 : -10,
-      transition: {
-        type: "spring",
-        stiffness: 300,
-        damping: 30
-      }
-    })
-  };
+
 
   return (
     <div

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useNavigate, Navigate, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import ConnexionPage from './pages/Auth/ConnexionPage';
 import { LanguageProvider, useTranslation } from "./i18n";
 import { ThemeProvider } from "./contexts/ThemeProvider";

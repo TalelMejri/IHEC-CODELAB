@@ -30,6 +30,5 @@ export const useAuth = () => {
         LogoutUser,
         updateUser,
         updateUserFull,
-        role: user?.role
     };
 };

@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { useTranslation } from '@/i18n';
 import Giscus from '@giscus/react';
 import { useTheme } from 'next-themes';
 
@@ -15,7 +14,6 @@ interface CommentsSectionProps {
 }
 
 export default function CommentsSection({ isOpen, onClose }: CommentsSectionProps) {
-    const { t } = useTranslation();
     const [activeTab, setActiveTab] = useState('comments');
     const [mounted, setMounted] = useState(false);
     const { theme } = useTheme();

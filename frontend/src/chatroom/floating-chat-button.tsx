@@ -6,10 +6,6 @@ import { motion } from "framer-motion";
 
 export default function FloatingChatButton() {
     const [isChatOpen, setIsChatOpen] = useState(false);
-    const [isVisible, setIsVisible] = useState(true);
-
-    if (!isVisible) return null;
-
     return (
         <>
             {/* Floating Button */}

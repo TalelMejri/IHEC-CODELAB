@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import {useSearchParams } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Eye, EyeOff, Mail, Lock, ArrowRight, Phone, IdCard, AlertCircle, Languages, ChevronDown, PlayCircle, ArrowLeft } from "lucide-react";
+import { Eye, EyeOff, Mail, Lock, ArrowRight, Phone, IdCard, AlertCircle, Languages, ChevronDown, PlayCircle } from "lucide-react";
 import logo from "@/assets/images/logo.png";
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
